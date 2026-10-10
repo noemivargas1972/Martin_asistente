@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom transitions and scrollbar styling for high visibility across all browsers */
+html, body, #app-root, main, div, textarea, table, section {
+  scrollbar-width: auto;
+  scrollbar-color: #64748b #f1f5f9;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #64748b;
+  border-radius: 8px;
+  border: 2px solid #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #334155;
+}
+
+/* Dark theme high-contrast scrollbars */
+.dark-scrollbar,
+.bg-slate-900,
+.bg-slate-950,
+.bg-\[\#161f38\],
+.bg-\[\#121930\],
+.bg-\[\#0a1124\],
+.bg-\[\#070d1e\] {
+  scrollbar-width: auto;
+  scrollbar-color: #818cf8 #0f172a;
+}
+
+.dark-scrollbar::-webkit-scrollbar-track,
+.bg-slate-900::-webkit-scrollbar-track,
+.bg-slate-950::-webkit-scrollbar-track,
+.bg-\[\#161f38\]::-webkit-scrollbar-track,
+.bg-\[\#121930\]::-webkit-scrollbar-track,
+.bg-\[\#0a1124\]::-webkit-scrollbar-track,
+.bg-\[\#070d1e\]::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb,
+.bg-slate-900::-webkit-scrollbar-thumb,
+.bg-slate-950::-webkit-scrollbar-thumb,
+.bg-\[\#161f38\]::-webkit-scrollbar-thumb,
+.bg-\[\#121930\]::-webkit-scrollbar-thumb,
+.bg-\[\#0a1124\]::-webkit-scrollbar-thumb,
+.bg-\[\#070d1e\]::-webkit-scrollbar-thumb {
+  background: #6366f1;
+  border: 2px solid #0f172a;
+  border-radius: 8px;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb:hover,
+.bg-slate-900::-webkit-scrollbar-thumb:hover,
+.bg-slate-950::-webkit-scrollbar-thumb:hover,
+.bg-\[\#161f38\]::-webkit-scrollbar-thumb:hover,
+.bg-\[\#121930\]::-webkit-scrollbar-thumb:hover,
+.bg-\[\#0a1124\]::-webkit-scrollbar-thumb:hover,
+.bg-\[\#070d1e\]::-webkit-scrollbar-thumb:hover {
+  background: #818cf8;
+}
+
+/* Utility to force visible vertical scrollbar if needed */
+.scrollbar-visible {
+  overflow-y: auto !important;
+  scrollbar-width: auto !important;
+}
+

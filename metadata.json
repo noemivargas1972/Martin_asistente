@@ -1,0 +1,6 @@
+{
+  "name": "Smart Commerce",
+  "description": "Sistema de Gestión y Control Comercial con Agente de Voz e IA Martín para inventario y análisis de ventas.",
+  "requestFramePermissions": ["microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
